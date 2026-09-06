@@ -24,7 +24,9 @@ pre { background: #f4f4f4; padding: 10px; border-radius: 6px; overflow-x: auto; 
 <a href="#" id="checkpoint-link">Back to checkpoint</a>
 <a href="#section1">1. What is a terminal</a>
 <a href="#section2">2. Reading a command</a>
-<a href="#section3">3. Introducing -steps aka arguments</a>
+<a href="#section3">3. Some commands require more</a>
+<a href="#section4">4. Introducing -steps aka arguments</a>
+<a href="#section5">5. List of terminal abbreviations</a>
 </nav>
 
 <h2 id="section1">1. What is a terminal</h2>
@@ -57,7 +59,36 @@ pre { background: #f4f4f4; padding: 10px; border-radius: 6px; overflow-x: auto; 
 <label for="cp2">Set this as my checkpoint</label>
 </div>
 
- <h2 id="section3">3. Introducing arguments aka -steps</h2>
+ <h2 id="section3">3. Some commands require more</h2>
+<p>Some commands work on their own, like we've already seen. Others need extra information attached before they'll do anything useful. Here are a few real ones:</p>
+
+<ul>
+<li><code>cd</code> needs a folder to move to</li>
+<li><code>cat</code> needs a file to show</li>
+<li><code>mkdir</code> needs a name for the new folder</li>
+<li><code>rm</code> needs a file to remove</li>
+<li><code>ping</code> needs an address to check</li>
+</ul>
+
+<p>The same idea in real-world terms:</p>
+
+<ul>
+<li><strong>look</strong> needs somewhere to look</li>
+<li><strong>feel</strong> needs something to feel</li>
+<li><strong>taste</strong> needs something to taste</li>
+<li><strong>remove</strong> needs something to remove</li>
+<li><strong>check</strong> needs something to check</li>
+</ul>
+
+<p>Each of these follows the same shape: <strong>command, then argument.</strong></p>
+<pre>cd Documents</pre>
+
+<div class="checkpoint-box">
+<input type="checkbox" class="checkpoint-set" data-section="section3" id="cp3">
+<label for="cp3">Set this as my checkpoint</label>
+</div>
+
+ <h2 id="section4">4. Introducing arguments aka -steps</h2>
 <p>Other commands need extra steps to get the results you want. For example, if you are told to look at something, you also need to know what you are being told to look at.</p>
 
 <pre>command -flag argument</pre>
@@ -78,6 +109,30 @@ pre { background: #f4f4f4; padding: 10px; border-radius: 6px; overflow-x: auto; 
 <div class="checkpoint-box">
 <input type="checkbox" class="checkpoint-set" data-section="section3" id="cp3">
 <label for="cp3">Set this as my checkpoint</label>
+</div>
+
+<h2 id="section5">5. List of terminal abbreviations</h2>
+<p>Now we know the difference between a command and a flag, let's first see a list of flag abbreviations to get a better understanding of each, before trying an example of your choosing in the Termux terminal.</p>
+
+<ul>
+<li><code>-l</code> = list</li>
+<li><code>-h</code> = help</li>
+<li><code>-v</code> = verbose (or version, depending on the command)</li>
+<li><code>-a</code> = all</li>
+<li><code>-r</code> = recursive (or remove, depending on the command)</li>
+<li><code>-f</code> = force (or file, depending on the command)</li>
+<li><code>-n</code> = number</li>
+<li><code>-s</code> = sensor</li>
+<li><code>-o</code> = output</li>
+<li><code>-p</code> = port (or package, depending on the command)</li>
+<li><code>-d</code> = delete (or directory, depending on the command)</li>
+</ul>
+
+<p><strong>Important note to take:</strong> not every command agrees on what a letter means, the same flag can mean something different depending on the command it's attached to. If you're ever unsure, adding <code>--help</code> after a command will usually show you exactly what its own flags do.</p>
+
+<div class="checkpoint-box">
+<input type="checkbox" class="checkpoint-set" data-section="section5" id="cp5">
+<label for="cp5">Set this as my checkpoint</label>
 </div>
 
 <script>
