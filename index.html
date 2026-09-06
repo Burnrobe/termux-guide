@@ -43,12 +43,30 @@ pre { background: #f4f4f4; padding: 10px; border-radius: 6px; overflow-x: auto; 
 </div>
 
 <h2 id="section2">2. Reading a command</h2>
-<p>Coming soon.</p>
+<p>Some commands are complete on their own, nothing else needed:</p>
+<pre>exit</pre>
+<pre>clear</pre>
+<pre>history</pre>
+<p>Each of these runs by itself. No extra steps, no extra information required.</p>
+
+<p>Other commands need extra steps to actually get the result you want. Think of it like getting clean hands, the goal is "clean hands", but that takes more than one action: you wash, then you dry. In a command, those extra steps are called <strong>flags</strong>.</p>
+
+<pre>command -step1 -step2</pre>
+
+<p>Here's a real one:</p>
+<pre>ls -l</pre>
+<ul>
+<li><code>ls</code> is the command, on its own</li>
+<li><code>-l</code> is a flag, an extra step attached to it, marked by the dash directly before it</li>
+</ul>
+
+<p><strong>Important note to take:</strong> don't worry yet about what <code>-l</code> actually does. Just take from this: a dash directly before a letter means "this is an extra step for the command to follow", the same way "wash" and "dry" are extra steps toward clean hands.</p>
 
 <div class="checkpoint-box">
 <input type="checkbox" class="checkpoint-set" data-section="section2" id="cp2">
 <label for="cp2">Set this as my checkpoint</label>
 </div>
+
 
 <script>
 document.querySelectorAll('.checkpoint-set').forEach(function(box) {
