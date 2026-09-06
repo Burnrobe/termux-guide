@@ -57,25 +57,28 @@ pre { background: #f4f4f4; padding: 10px; border-radius: 6px; overflow-x: auto; 
 <label for="cp2">Set this as my checkpoint</label>
 </div>
 
-<h2 id="section3">3. Introducing -steps aka arguments</h2>
-<p>Other commands need extra steps to actually get the result you want. Think of it like getting clean hands, the goal is "clean hands", but that takes more than one action: you wash, then you dry. In a command, those extra steps are called <strong>flags</strong>.</p>
+ <h2 id="section3">3. Introducing arguments aka -steps</h2>
+<p>Other commands need extra steps to get the results you want. For example, if you are told to look at something, you also need to know what you are being told to look at.</p>
 
-<pre>command -step1 -step2</pre>
+<pre>command -flag argument</pre>
+<pre>look -at this</pre>
+
+<p><code>look</code> is the command. <code>-at</code> is the flag. <code>this</code> is the argument, the specific thing being looked at.</p>
 
 <p>Here's a real one:</p>
-<pre>ls -l</pre>
+<pre>ls -l Documents</pre>
 <ul>
-<li><code>ls</code> is the command, on its own</li>
-<li><code>-l</code> is a flag, an extra step attached to it, marked by the dash directly before it</li>
+<li><code>ls</code> is the command</li>
+<li><code>-l</code> is the flag</li>
+<li><code>Documents</code> is the argument</li>
 </ul>
 
-<p><strong>Important note to take:</strong> don't worry yet about what <code>-l</code> actually does. Just take from this: a dash directly before a letter means "this is an extra step for the command to follow", the same way "wash" and "dry" are extra steps toward clean hands.</p>
+<p><strong>Important note to take:</strong> a flag sometimes needs an argument to make sense, the same way "look" needs something to look at. Not every flag needs one, but when it does, the argument comes straight after it, separated by a space.</p>
 
 <div class="checkpoint-box">
 <input type="checkbox" class="checkpoint-set" data-section="section3" id="cp3">
 <label for="cp3">Set this as my checkpoint</label>
 </div>
-
 
 <script>
 document.querySelectorAll('.checkpoint-set').forEach(function(box) {
